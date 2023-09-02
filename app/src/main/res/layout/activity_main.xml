@@ -6,12 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/bth_scan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Scan"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="305dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/bth_scan"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:text="Сканировать продукт"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/bth_addProduct"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:text="Добавить продукт"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
